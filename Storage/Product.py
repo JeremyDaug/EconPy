@@ -5,14 +5,14 @@ Product Class for EconPy Project. Used to store the shared data of products.
 
 class Product:
     """
-    Product class, stores data of products.
+    Product class, stores data of a product.
     """
 
     def __init__(self, ID: int = 0, name: str = "", variantName: str = "",
                  unitName: str = "", quality: int = 0, mass: float = 0,
                  bulk: float = 0, fractional: bool = False, tags: str = "",
                  wants: str = "", mttf: int = 0, failsInto: dict = None,
-                 maintenance: dict = None, technology: str = ""):
+                 maintenance: dict = None, technology: str = "", imageFile: str = ""):
         """
         Constructor
         :param ID: The id of the product, should be unique.
@@ -29,6 +29,7 @@ class Product:
         :param failsInto: What it fails into.
         :param maintenance: What can maintain this product, reducing it's failure.
         :param technology: What technology makes this product available, ; separated string.
+        :param imageFile: The image file for the product.
         """
         self.Id: int = ID
         """Product Id, must be unique."""
@@ -64,6 +65,8 @@ class Product:
         """Products that maintain this one directly."""
         self.Technology: str = technology
         """The Technologies required to make this product. Semicolon separated list."""
+        self.Image: str = imageFile
+        """The image file location used to for the product."""
         return
 
 

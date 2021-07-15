@@ -13,8 +13,10 @@ saveFolder: str = os.path.join(root, "SaveData")
 
 sharedData: str = os.path.join(saveFolder, "SharedData")
 
-sharedProducts: str = os.path.join(sharedData, "Products")
-sharedProductTags: str = os.path.join(sharedProducts, "ProductTags.json")
+sharedProductData: str = os.path.join(sharedData, "Products")
+commonProductTags: str = os.path.join(sharedProductData, "ProductTags.json")
+commonWants: str = os.path.join(sharedProductData, "Wants.json")
+commonProducts: str = os.path.join(sharedProductData, "Products.json")
 
 if __name__ == "__main__":
     pass

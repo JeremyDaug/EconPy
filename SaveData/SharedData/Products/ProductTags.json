@@ -1,1 +1,14 @@
-["Luxury", "Inferior", "MilitaryGood"]
+[
+  "Luxury",
+  "Inferior",
+  "MilitaryGood",
+  "Public",
+  "Claim",
+  "Consumable",
+  "ConsumerGood",
+  "Livestock",
+  "Fixed",
+  "Currency",
+  "Service",
+  "Weapon"
+]
