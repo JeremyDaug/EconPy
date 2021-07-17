@@ -17,6 +17,8 @@ sharedProductData: str = os.path.join(sharedData, "Products")
 commonProductTags: str = os.path.join(sharedProductData, "ProductTags.json")
 commonWants: str = os.path.join(sharedProductData, "Wants.json")
 commonProducts: str = os.path.join(sharedProductData, "Products.json")
+commonProductImages: str = os.path.join(sharedProductData, "ProductImages")
+
 
 if __name__ == "__main__":
     pass

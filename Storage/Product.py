@@ -69,6 +69,9 @@ class Product:
         """The image file location used to for the product."""
         return
 
+    def failure_chance(self):
+        return 1 / self.MTTF
+
 
 if __name__ == "__main__":
     test = Product()
